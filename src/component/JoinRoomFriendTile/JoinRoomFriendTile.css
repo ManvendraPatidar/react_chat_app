@@ -1,0 +1,16 @@
+.friendTile{
+    background-color: rgb(75, 91, 104);
+    margin: 5px 10px ;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.inviteFriendListStyle{
+    max-height: 400px;
+    width: 100%;
+    margin: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+}

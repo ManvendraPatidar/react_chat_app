@@ -1,0 +1,13 @@
+
+.parentContainer {
+    height: 100vh;
+    width: 100%;
+    background-color: #36454F;
+}
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}

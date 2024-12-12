@@ -1,0 +1,21 @@
+
+.chatSpace{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.chatTile{
+    padding: 10px 20px;
+    background-color: #36454F;
+    margin: 15px 10px;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1.25px;
+    line-height: 18px;
+    overflow-wrap: break-word;
+}

@@ -1,0 +1,63 @@
+.sideBarStyle {
+  height: 100%;
+  width: 500px;
+  background-color: white;
+  flex-direction: column;
+}
+
+.headingText {
+  height: 30px;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  font-size: 20px;
+  color: black;
+  box-sizing: border-box;
+}
+
+.searchDivStyle {
+  width: 300px;
+  max-height: 600px;
+  padding: 10px;
+  position: absolute;
+  z-index: 100;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.searchStyle {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 0px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 0px;
+  display: flex;
+}
+
+.resultListStyle {
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.searchResultCArd {
+  width: 100%;
+  background-color: rgb(75, 91, 104);
+  border-radius: 10px;
+  justify-content: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}

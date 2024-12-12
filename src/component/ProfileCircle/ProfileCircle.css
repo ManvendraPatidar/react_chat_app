@@ -1,0 +1,21 @@
+.profileCircle{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 50px;
+    
+}
+
+.logoutModel{
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+    top: 55px;
+    right: 50px;
+    padding: 15px;
+    border-radius: 15px 0px 15px 15px;
+}

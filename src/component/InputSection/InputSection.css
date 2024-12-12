@@ -1,0 +1,20 @@
+#inputsection{
+     background-color: #232e36;
+     height:  75px;
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     box-sizing: border-box;
+     padding: 10px;
+}
+
+.inputTextFeild{
+    border-radius: 10px;
+    border : 0px;  
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px ;
+    width: 85%;
+
+}
