@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./JoinRoomFriendTile.css";
+
 const JoinRoomFriendTile = ({ data, selectedMembers }) => {
   const [isSelected, setIsSelected] = useState(false);
 

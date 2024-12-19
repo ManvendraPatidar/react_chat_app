@@ -1,10 +1,11 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import "./ChatTile.css";
 import { MyContext } from "../../screens/HomePage/HomePage";
 
 function ChatTile(props) {
   const { userData } = useContext(MyContext);
   const { id, data } = props;
+
   const iscurrentUSer = data?.senderId === userData?.userId;
 
   return (

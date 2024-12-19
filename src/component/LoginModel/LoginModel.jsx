@@ -11,66 +11,6 @@ function LoginModel({ setShowLoginModel }) {
 
   const { setUserData, setCurrentChat } = useContext(MyContext);
 
-  return (
-    <div className="loginModel">
-      <span className="appName">SIGNAL</span>
-      <div className="LoginCard">
-        <span className="name"> {isLogin ? "Log In" : "Sign Up"}</span>
-        <input
-          placeholder="Email Address"
-          className="inputClass"
-          type="email"
-          value={email}
-          onChange={(n) => {
-            setEmail(n.target.value);
-          }}
-        />
-
-        {isLogin ? (
-          <div />
-        ) : (
-          <input
-            placeholder="Enter you Name"
-            className="inputClass"
-            value={name}
-            onChange={(n) => {
-              setName(n.target.value);
-            }}
-          />
-        )}
-        <input
-          placeholder="Password"
-          type={"password"}
-          className="inputClass"
-          value={password}
-          onChange={(n) => {
-            setPassword(n.target.value);
-          }}
-        ></input>
-
-        <button
-          className="button"
-          style={{ margin: "10px 0px 20px 0px" }}
-          onClick={isLogin ? onLogin : onSignUp}
-        >
-          {isLogin ? "Start Chat" : "Create Account"}
-        </button>
-
-        <span
-          className="signupButton"
-          onClick={() => {
-            setEmail("");
-            setPassword("");
-            setName("");
-            setIsLogin(!isLogin);
-          }}
-        >
-          {isLogin ? "Create new Account" : "Already have an Account"}
-        </span>
-      </div>
-    </div>
-  );
-
   function onLogin() {
     if (password.trim() == "") {
       alert("Password must not be empty !!");
@@ -153,6 +93,68 @@ function LoginModel({ setShowLoginModel }) {
       alert("Please Enter a valid email");
     }
   }
+  
+  return (
+    <div className="loginModel">
+      <span className="appName">SIGNAL</span>
+      <div className="LoginCard">
+        <span className="name"> {isLogin ? "Log In" : "Sign Up"}</span>
+        <input
+          placeholder="Email Address"
+          className="inputClass"
+          type="email"
+          value={email}
+          onChange={(n) => {
+            setEmail(n.target.value);
+          }}
+        />
+
+        {isLogin ? (
+          <div />
+        ) : (
+          <input
+            placeholder="Enter you Name"
+            className="inputClass"
+            value={name}
+            onChange={(n) => {
+              setName(n.target.value);
+            }}
+          />
+        )}
+        <input
+          placeholder="Password"
+          type={"password"}
+          className="inputClass"
+          value={password}
+          onChange={(n) => {
+            setPassword(n.target.value);
+          }}
+        ></input>
+
+        <button
+          className="button"
+          style={{ margin: "10px 0px 20px 0px" }}
+          onClick={isLogin ? onLogin : onSignUp}
+        >
+          {isLogin ? "Start Chat" : "Create Account"}
+        </button>
+
+        <span
+          className="signupButton"
+          onClick={() => {
+            setEmail("");
+            setPassword("");
+            setName("");
+            setIsLogin(!isLogin);
+          }}
+        >
+          {isLogin ? "Create new Account" : "Already have an Account"}
+        </span>
+      </div>
+    </div>
+  );
+
+
 }
 
 function isValidEmail(email) {

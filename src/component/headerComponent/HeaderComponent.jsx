@@ -5,14 +5,10 @@ import { MyContext } from "../../screens/HomePage/HomePage.jsx";
 import { checkIsRoom } from "../../sevices/checkIsRoom.js";
 
 function HeaderComponent() {
-  const [members, setMembers] = useState([]);
-  const {
-    setShowPopUp,
-    setShowJoinRoomPopUp,
-    setShowCreateRoomPopUp,
-    currentChat,
-  } = useContext(MyContext);
+  const { setShowJoinRoomPopUp, currentChat } = useContext(MyContext);
+
   const [isRoom, setIsRoom] = useState(false);
+
   useEffect(() => {
     setIsRoom(checkIsRoom(currentChat.id ?? ""));
   }, [currentChat.id]);
